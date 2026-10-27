@@ -1,0 +1,33 @@
+# 构建产物
+*.EFI
+*.efi
+*.o
+*.obj
+*.so
+src/*.EFI
+
+# 你自己提取的 NVIDIA 固件 —— 不要提交进公开仓库
+src/blobs/*.bin
+blobs/*.bin
+
+# NVRAM 备份（含本机启动项信息）
+nvram_backup/
+
+# 从 ESP 取回的日志与 dump
+artifacts/
+*.utf8.txt
+50hx_*.txt
+
+# 测速样本与结果
+bench/prompt*.txt
+bench/results-*.json
+
+# Python
+__pycache__/
+*.pyc
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
